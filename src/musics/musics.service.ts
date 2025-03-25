@@ -14,7 +14,7 @@ export class MusicsService {
   getOne(id: number): Music {
     const music = this.musics.find((music) => music.id === id);
     if (!music) {
-      throw new NotFoundException(`Movie with ID ${id} not found.`);
+      throw new NotFoundException(`Music with ID ${id} not found.`);
     }
     return music;
   }
