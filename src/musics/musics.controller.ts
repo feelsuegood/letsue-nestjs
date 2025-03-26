@@ -23,7 +23,6 @@ export class MusicsController {
 
   @Get(':id')
   getOne(@Param('id') musicId: number): Music | undefined {
-    console.log(typeof musicId);
     return this.musicsService.getOne(musicId);
   }
 
